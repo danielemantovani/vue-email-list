@@ -9,8 +9,7 @@
 </head>
 <body>
     <div id="app">
-        <button>Generate random Email</button>
-        <ul>
+        <ul v-if="emailArray.length ===  10">
             <li v-for = "email in emailArray">{{email}}</li>
         </ul>
     </div>
